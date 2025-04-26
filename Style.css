@@ -1,0 +1,782 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    scroll-behavior: smooth;
+
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./Img/main-banner.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 2rem 0;
+    height: 90vh;
+    background-attachment: fixed;
+}
+
+.container {
+    width: 90%;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}
+
+.logo span {
+    color: #FB414E;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+.active {
+    color: #FB414E !important;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-menu a:hover {
+    color: #FB414E;
+    transition: all 300ms ease-in-out;
+}
+
+.hero-content {
+    text-align: center;
+    padding: 6rem 0;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    line-height: 1.2;
+    padding-top: 4rem;
+}
+
+.hero-content p {
+    font-size: 1rem;
+    margin-bottom: 2rem !important;
+    line-height: 1.2;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.btn {
+    padding: 1rem 3rem;
+    border-radius: 0px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.5s ease-in-out;
+}
+
+.primary {
+    background: #FB414E;
+    color: white;
+    transition: 0.5s ease-in-out;
+}
+
+.secondary {
+    border: 2px solid white;
+    color: white;
+    transition: 0.5s ease-in-out;
+}
+
+.primary:hover,
+.secondary:hover {
+    background: white;
+    color: #FB414E;
+    transition: all 0.5s ease-in-out;
+}
+
+/* Services Section */
+.services {
+    padding-bottom: 80px;
+}
+
+.services-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.service-card {
+    padding: 50px;
+    background: white;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    background-color: rgb(18, 26, 22);
+    width: 30%;
+    margin-top: -100px;
+}
+
+.service-card h3 {
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.service-card p {
+    color: #666;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.service-card i {
+    color: #FB414E;
+    font-size: 42px;
+    margin: 25px 0;
+}
+
+.service-card:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
+
+.services-heading {
+    text-align: center;
+    margin: 70px 0;
+}
+
+.services-heading h5 {
+    color: #FB414E;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.services-heading h3 {
+    text-transform: capitalize;
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.services-heading h3 span {
+    color: #FB414E;
+}
+
+.services-heading p {
+    font-weight: 300;
+    width: 40%;
+    margin: 20px auto;
+}
+
+.services-details {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.details-card {
+    padding: 30px;
+    width: 33%;
+    text-align: center;
+}
+
+.details-card h3 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.details-card i {
+    font-size: 32px;
+    margin: 15px 0;
+}
+
+.details-card p {
+    font-weight: 300;
+}
+
+
+/* business-plan */
+
+.business-plan {
+    background-color: #202B2F;
+    margin: 0 60px;
+}
+
+.business-plan-row {
+    padding: 120px 0;
+    align-items: center;
+}
+
+.business-plan-col1 {
+    width: 50%;
+    padding-right: 80px;
+}
+
+.business-plan-col1 h2 {
+    color: #fff;
+    font-size: 48px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.business-plan-col1 p {
+    color: #fff;
+    font-weight: 300;
+    text-transform: capitalize;
+    margin: 25px 0;
+    line-height: 1.6;
+}
+
+.business-plan-col2 {
+    width: 50%;
+}
+
+.services-details-img {
+    /* width: 600px; */
+    width: 100%;
+}
+
+.business-plan2 {
+    background-color: #f7f7f7;
+    margin: 0 60px;
+}
+
+.business-plan2-col2 {
+    width: 50%;
+    padding-right: 80px;
+
+}
+
+.business-plan2-col2 h2 {
+    font-size: 48px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.business-plan2-col2 p {
+    font-weight: 300;
+    text-transform: capitalize;
+    margin: 25px 0;
+    line-height: 1.6;
+}
+
+.business-plan2-col1 {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.business-plan2-col1-01 {
+    width: 50%;
+    padding: 15px;
+}
+
+.business-plan2-col1-01 h4 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.business-plan2-col1-01 p {
+    font-weight: 300;
+}
+
+.business-plan2-col1-01 img {
+    width: 40px;
+    margin-bottom: 10px;
+}
+
+.business-clints {
+    margin: 0 60px;
+}
+
+.business-clint-col1 {
+    width: 50%;
+    padding-right: 80px;
+}
+
+.business-clint-col1 h2 {
+    font-size: 48px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.business-clint-col1 p {
+    font-weight: 300;
+    text-transform: capitalize;
+    margin: 25px 0;
+    line-height: 1.6;
+}
+
+.business-clint-btn {
+    border: 2px solid rgb(0, 0, 0);
+    transition: 0.5s ease-in-out;
+    color: rgb(0, 0, 0);
+}
+
+.business-clint-btn:hover {
+    border: 2px solid rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    transition: all 0.5s ease-in-out;
+}
+
+
+
+.business-plan2-col1-001 {
+    width: 100%;
+    padding: 15px;
+}
+
+.business-plan2-col1-001 h2 {
+    font-size: 48px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.business-plan2-col1-001 p {
+    font-weight: 300;
+    text-transform: capitalize;
+    margin: 25px 0;
+    line-height: 1.6;
+}
+
+
+
+/* form */
+.contact-form {
+    background: #fff;
+    padding: 30px;
+}
+
+.form-group {
+    margin-bottom: 25px;
+    position: relative;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #717171;
+    position: absolute;
+    left: 12px;
+    top: 13px;
+    pointer-events: none;
+    transition: 0.2s;
+}
+
+input:focus~label,
+input:not(:placeholder-shown)~label,
+textarea:focus~label,
+textarea:not(:placeholder-shown)~label,
+select:valid~label {
+    top: -8px;
+    left: 5px;
+    font-size: 12px;
+    background: white;
+    padding: 0 5px;
+    color: #1d1d1d;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #181818;
+    border-radius: 0;
+    font-size: 16px;
+    background: transparent;
+}
+
+.row-group {
+    display: flex;
+    gap: 20px;
+}
+
+.row-group .form-group {
+    flex: 1;
+    min-width: 0;
+}
+
+textarea {
+    height: 120px;
+    resize: vertical;
+    padding-top: 18px;
+}
+
+.submit-btn {
+    background: #FB414E;
+    color: white;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 0;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.5s ease-in-out;
+    width: 100%;
+    margin-top: 15px;
+    border: 2px solid #FB414E;
+}
+
+.submit-btn:hover {
+    background: #ffffff;
+    color: #FB414E;
+    border: 2px solid #FB414E;
+    transition: all 0.5s ease-in-out;
+}
+
+
+
+
+
+
+.footer {
+    background-color: #202B2F;
+    color: white;
+    padding: 50px 0;
+}
+
+.row {
+    width: 75%;
+    margin: auto;
+    padding: 80px 0 0px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.footer-col1 {
+    width: 50%;
+}
+
+.footer-col1 p{
+font-weight: 300;
+}
+
+.footer-col1 i {
+    font-size: 20px;
+    margin-right: 10px;
+    color: #FB414E;
+    margin-top: 50px;
+
+}
+
+.footer-col2 {
+    width: 50%;
+    text-align: right;
+}
+
+.footer-col2 p{
+    font-weight: 100;
+    padding-right: 5px;
+    margin-top: 100px;
+    font-size: 16px;
+}
+
+
+.form-title {
+    text-align: right;
+    margin-bottom: 30px;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.form-group {
+    display: flex;
+    gap: 0px;
+    align-items: center;
+}
+
+.email-input {
+    flex: 1;
+    padding: 12px;
+    background-color: #ffffff;
+    font-size: 16px;
+    padding-left: 20px;
+}
+
+.footer-submit-btn {
+    padding: 12px 50px;
+    background-color: #FB414E;
+    margin-left: -20px;
+    color: white;
+    border: none;
+
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.footer-submit-btn:hover {
+    background-color: #34495e;
+}
+
+
+
+.imgs-row{
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+
+.imgs-col{
+    width: 24%;
+}
+
+.imgs-col img{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .container {
+        width: 95%;
+    }
+    
+    .services-container,
+    .services-details {
+        width: 90%;
+    }
+    
+    /* Added font adjustments */
+    .business-plan2-col2 h2 {
+        font-size: 2.5rem;
+        line-height: 1.3;
+    }
+    
+    .business-plan-col1 h2 {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .service-card {
+        width: 45%;
+    }
+    
+    .hero-content {
+        padding: 4rem 0;
+    }
+    
+    .hero-content h1 {
+        font-size: 2.5rem;
+        line-height: 1.3;
+    }
+    
+    .business-plan,
+    .business-plan2,
+    .business-clints {
+        margin: 0 30px;
+    }
+    
+    /* Added text alignment */
+    .business-plan2-col2 {
+        text-align: center;
+    }
+    
+    .business-plan2-col2 h2 {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-menu {
+        display: none;
+    }
+    
+    .hero-content h1 {
+        font-size: 2rem;
+        padding-top: 2rem;
+        text-align: center;
+    }
+    
+    .hero-content p {
+        width: 90%;
+        text-align: center;
+    }
+    
+    .service-card {
+        width: 100%;
+        margin-top: 20px;
+        text-align: center;
+    }
+    
+    .services-heading h3 {
+        font-size: 2rem;
+        text-align: center;
+    }
+    
+    .services-heading p {
+        width: 80%;
+        text-align: center;
+    }
+    
+    .details-card {
+        width: 50%;
+        text-align: center;
+    }
+    
+    .business-plan-row,
+    .business-plan2 .business-plan-row {
+        flex-direction: column;
+    }
+    
+    .business-plan-col1,
+    .business-plan-col2,
+    .business-plan2-col1,
+    .business-plan2-col2,
+    .business-clint-col1,
+    .business-clint-col2 {
+        width: 100%;
+        padding: 0;
+        text-align: center;
+    }
+
+    .business-plan-col2 img{
+        margin-top: 30px;
+        width: 100%;
+    }
+    
+    .business-plan-col2 video {
+        margin-top: 30px;
+        width: 100%;
+    }
+    
+    .business-plan-col1 h2,
+    .business-clint-col1 h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+    
+    .business-plan-col1 p,
+    .business-clint-col1 p {
+        text-align: center;
+    }
+    
+    .business-plan2-col1-01 {
+        width: 100%;
+        padding: 20px 0;
+        text-align: center;
+    }
+    
+    .imgs-col {
+        width: 48%;
+    }
+    
+    .row-group {
+        flex-direction: column;
+    }
+    
+    .footer .row {
+        flex-direction: column;
+    }
+    
+    .footer-col1,
+    .footer-col2 {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .form-title,
+    .footer-col2 p {
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        height: auto;
+        padding: 2rem 0;
+    }
+    
+    .hero-content h1 {
+        font-size: 1.8rem;
+        line-height: 1.2;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .details-card {
+        width: 100%;
+        padding: 20px;
+    }
+    
+    .services-heading h3 {
+        font-size: 1.5rem;
+    }
+    
+    .services-heading p {
+        width: 95%;
+        font-size: 0.9rem;
+    }
+    
+    .business-plan,
+    .business-plan2,
+    .business-clints {
+        margin: 0 15px;
+    }
+    
+    .business-plan2-col1-01 h4 {
+        font-size: 1.1rem;
+    }
+    
+    .business-plan2-col1-01 p {
+        font-size: 0.9rem;
+    }
+    
+    .imgs-col {
+        width: 100%;
+    }
+    
+    .footer-submit-btn {
+        margin-top: 10px;
+        width: 100%;
+    }
+    
+    .business-plan-col1 h2,
+    .business-clint-col1 h2 {
+        font-size: 1.5rem;
+    }
+    
+    .business-plan-col1 p,
+    .business-clint-col1 p {
+        font-size: 0.9rem;
+    }
+    
+    .contact-form label {
+        font-size: 0.9rem;
+    }
+}
